@@ -1,0 +1,117 @@
+body {
+  height: 100%;
+  background: url("download.jpg");
+  mask-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 300px;
+}
+
+td {
+  width: 100px;
+  height: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+div.transbox {
+  margin: 30px;
+  height: 100px;
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  width: 200px;
+  height: 100px;
+  font-weight: bold;
+  color: #000000;
+}
+
+form {
+  position: relative;
+  height: 280px;
+  width: 30%;
+  margin-top: 15%;
+  padding: 2rem;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 3px solid rgb(199, 199, 218);
+  background-color: transparent;
+}
+
+form .form-field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #b92f2f;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+input[type="text"],
+input[type="email"] {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  color: #4a4a4a;
+  text-indent: 40px;
+}
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #1c85e0;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+}
+
+.fixed-footer {
+  width: 100%;
+  position: fixed;
+  background: #333;
+  padding: 0px 0;
+  color: #fff;
+  bottom: 0;
+}
+
+h1 {
+  color: rgb(246, 246, 246);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}

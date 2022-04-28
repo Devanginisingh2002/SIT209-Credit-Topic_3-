@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about IoT Applications" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Car</title>
+  </head>
+
+  <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">     
+    <center><div style="margin-top: 50px;" id="Sb"><h1>Change Car's Headlight Color</h1><br/></center>
+      <center> <div id="current-ambience" class="transbox">HeadLight</div><br/></center>
+
+    <center>
+    <table>
+    <div id="colors-container">
+    <td><div id="color-red" onclick='colorchanger("red")'>RED</div></td>
+    <td><div id="color-blue" onclick='colorchanger("lightblue")'>BLUE</div></td>
+    <td><div id="color-grey" onclick='colorchanger("lightgrey")'>GREY</div></td>
+    <td><div id="color-orange" onclick='colorchanger("orange")'>ORANGE</div></td>
+    <td><div id="color-green" onclick='colorchanger("lightgreen")'>GREEN</div></td>
+    </table>
+
+    <center>
+      <br>
+      <br>
+    <button type="button" class="btn btn-primary" onclick="log()">Logout</button>
+  </center>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
